@@ -1,0 +1,14 @@
+// out: null
+
+
+@lightColor: #FFFFFF;
+@darkColor: #0A0503;
+@red: rgb(255, 0, 0);
+@grey: #BFBFBF;
+
+/* Mixin */
+@lighter: lighten(spin(@red, 3), 7%);
+@lighter1: lighten(spin(@red, 5), 10%);
+@lighter2: lighten(spin(@red, 10), 20%);
+@darker1: darken(spin(@red, -5), 10%);
+@darker2: darken(spin(@red, -10), 20%);

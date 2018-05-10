@@ -1,0 +1,196 @@
+@import 'palette.less';
+@import 'fonts.less';
+@import 'mixinlibrary.less';
+@import url('https://fonts.googleapis.com/css?family=Faster+One');
+
+// MOBILE STYLESHEET
+body {
+
+    font-family: @normalFont;
+
+    header {
+        border-top: 1em solid @darkColor;
+        h1 {
+            padding: .5em;
+            font-family: 'Faster One', cursive;
+            font-size: 2em;
+            border-bottom: .5em solid @lighter;
+            text-align: center;
+        }
+    }
+
+    /* Hamburger menu */
+    nav {
+        .menuBtn span {
+            display: flex;
+            width: 19px;
+            height: 3px;
+            margin: 4px 0;
+            background: @darkColor;
+            z-index: 99;
+        }
+
+        .responsiveMenu {
+            display: none;
+
+            li {
+                padding: .7em;
+                padding-left: 0;
+                a {
+                    text-decoration: none;
+                    color: @darker2;
+                    font-family: @headingFont;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .expand {
+            display: block !important;
+        }
+    }
+    /**/
+    footer {
+        background-color: @darkColor;
+        color: @lightColor;
+        font-family: @normalFont;
+        padding-left: 2em;
+        h2 {
+            font-family: @normalFont;
+            font-size: 1.2em;
+            padding-bottom: 1em;
+        }
+        h3 {
+            font-family: @normalFont;
+            font-size: 1em;
+            padding-bottom: .5em;
+        }
+
+        ul {
+            list-style-type: none;
+            text-indent: -1em;
+            padding: .5em;
+
+            a {
+                &:link {
+                    color: @lightColor;
+                    text-decoration: none;
+                }
+            }
+        }
+        p {
+            font-size: .7em;
+        }
+        img {
+            width: 80px;
+            height: auto;
+            padding: 1em;
+        }
+
+
+    }
+    .wrapper {
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+    }
+
+    .desktopMenu {
+        display: none;
+    }
+
+
+    main {
+        padding: 1em;
+        h2 {}
+        h3 {}
+    }
+
+} // TABLET STYLESHEET
+@media screen and (min-width: 481px) {
+    header {
+        h1 {
+            font-size: 2.8em;
+            border-bottom: .5em solid @lighter;
+            text-align: center;
+        }
+    }
+    main {
+        font-size: 1.1em;
+        padding-bottom: .5em;
+    }
+    footer {
+        font-size: 1.1em;
+        img {
+            width: 80px;
+            height: auto;
+            padding: 1em;
+        }
+    }
+}
+
+// DESKTOP STYLESHEET
+@media screen and (min-width: 1025px) {
+    body {
+        header {
+            border-top: none;
+            h1 {
+                font-size: 3.2em;
+            }
+
+        }
+        nav {
+            display: contents;
+            background-color: @darkColor;
+            margin-right: 0;
+            font-family: @normalFont;
+            .responsiveMenu {
+                display: block !important;
+            }
+
+            .expand {
+                display: none !important;
+            }
+            .menuBtn span {
+                display: none !important;
+            }
+
+            .responsiveMenu {
+                background-color: @darkColor;
+
+                li {
+                    display: inline-block;
+                    background-color: @darkColor;
+                    list-style-type: none;
+                    margin-right: 0;
+                    font-size: 1.2em;
+                    padding-right: 1em;
+                    padding-left: 2em;
+                    a {
+                        color: @lightColor;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: @grey;
+                        text-decoration: none;
+                    }
+                    a:active {
+                        color: @grey;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        footer {
+            img {
+                width: 100px;
+            }
+            p {
+                font-size: .8em;
+            }
+        }
+    }
+}
