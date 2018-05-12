@@ -1,7 +1,7 @@
 <footer>
-    <h2>Footer Content</h2>
+    <!--<h2>Footer Content</h2> -->
     <section id="links" class="section group">
-        <div class="col span_4_of_12">
+       <!-- <div class="col span_4_of_12">
             <h3>H3</h3>
             <ul>
                 <li><a>Item</a></li>
@@ -14,8 +14,8 @@
                 <li><a>Item</a></li>
                 <li><a>Item</a></li>
             </ul>
-        </div>
-        <div class="col span_4_of_12">
+        </div> -->
+        <div class="col span_2_of_12">
             <h3>Connect</h3>
             <img src="images/facebook.png" alt="facebook link icon">
             <img src="images/twitter.png" alt="twitter link icon">
