@@ -48,3 +48,11 @@ background-image: -o-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha
 background-image: -ms-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
 background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
 }
+
+.boxProperties(@borderRadius; @boxShadow) {
+    -moz-border-radius: @borderRadius;
+    -webkit-border-radius: @borderRadius;
+    border-radius: @borderRadius;
+    -webkit-box-shadow: @boxShadow;
+    box-shadow: @boxShadow;
+}
